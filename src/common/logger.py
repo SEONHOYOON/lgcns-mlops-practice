@@ -58,7 +58,7 @@ def set_logger(log_path: str = LOG_FILEPATH) -> logging.Logger:
     logger = logging.getLogger("rich")
 
     # TODO: 로거의 기본 수준을 DEBUG 설정
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     # TODO: 기본 로거에 위에서 만든 파일 핸들러를 추가
     logger.addHandler(get_file_handler(log_path))
     return logger
